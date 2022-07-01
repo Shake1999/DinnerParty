@@ -8,13 +8,13 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <router-link to="/">Home></router-link>
+        <router-link to="/about">About</router-link>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <router-view></router-view>
 </template>
 
 <style>
