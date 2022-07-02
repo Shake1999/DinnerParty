@@ -8,8 +8,14 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">
+          <img class="homeIcon" src="@/assets/icons/home.svg" width="40" height="40"/>
+          Home
+        </RouterLink>
+        <RouterLink tag="button" to="/about">
+          <img class="profileIcon" src="@/assets/icons/profile.svg" width="40" height="40"/>
+          About
+        </RouterLink>
       </nav>
     </div>
   </header>
@@ -19,23 +25,30 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <style>
 @import '@/assets/base.css';
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
+  font-family: 'Lora', serif;
   font-weight: normal;
 }
 
 header {
   line-height: 1.5;
   max-height: 100vh;
+  font-family: 'Lora', serif;
 }
 
-.logo {
+.homeIcon {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
+}
+
+.profileIcon {
+  display: block;
+  margin: 0 auto;
 }
 
 a,
