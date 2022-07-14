@@ -133,7 +133,6 @@ header {
       align-items: center;
       color: hsl(1, 95%, 83%);
       text-decoration: none;
-      gap: 2%;
       padding-right: 10%;
       padding-bottom: 8px;
       padding-top: 8px;
@@ -151,6 +150,7 @@ header {
       font-size: 14px;
       transition: .5s ease all;
       padding: 12px;
+      padding-inline: 25px;
       text-decoration: none;
       text-decoration-line: none;
       color: hsl(1, 95%, 83%);
@@ -159,6 +159,11 @@ header {
       &:hover {
         color: hsl(0, 99%, 46%);
         background-color: #fff;
+      }
+
+      &:active {
+        //transition: ...
+        background-color: aqua;
       }
     }
 
